@@ -4,12 +4,12 @@ server:
 rego:
   client:
     address:
-      url: http://localhost:8085/api/v1/addresses   # execução local fora do docker
+      url: http://address-service:8085/api/v1/addresses
 
 spring:
   data:
     mongodb:
-      host: localhost
+      host: mongo
       port: 27017
       authentication-database: admin
       username: root
